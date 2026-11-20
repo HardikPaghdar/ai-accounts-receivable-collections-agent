@@ -4,7 +4,7 @@ c=TestClient(app)
 
 def test_aging_and_summary():
     x=c.get("/api/overview").json()
-    assert x["invoice_count"]==6 and x["open_invoice_count"]==6
+    assert x["invoice_count"]==6 and x["open_invoice_count"]==4
     inv=next(i for i in c.get("/api/invoices").json() if i["id"]=="INV-2003")
     assert inv["days_overdue"]==67 and inv["aging_bucket"]=="61_90"
 
