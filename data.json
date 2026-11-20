@@ -1,0 +1,120 @@
+{
+  "customers": [
+    {
+      "id": "CUS-01",
+      "name": "Meridian Industrial Systems",
+      "contact": "Priya Shah",
+      "installments": 3,
+      "min_installment": 500
+    },
+    {
+      "id": "CUS-02",
+      "name": "BluePeak Facilities Group",
+      "contact": "Daniel Morris",
+      "installments": 2,
+      "min_installment": 300
+    },
+    {
+      "id": "CUS-03",
+      "name": "Crestline Manufacturing",
+      "contact": "Aarav Mehta",
+      "installments": 4,
+      "min_installment": 250
+    },
+    {
+      "id": "CUS-04",
+      "name": "Westbridge Engineering",
+      "contact": "Sofia Patel",
+      "installments": 3,
+      "min_installment": 400
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-2001",
+      "customer_id": "CUS-01",
+      "amount": 8400,
+      "issue_date": "2026-10-05",
+      "due_date": "2026-11-04",
+      "status": "open",
+      "currency": "USD"
+    },
+    {
+      "id": "INV-2002",
+      "customer_id": "CUS-02",
+      "amount": 2650,
+      "issue_date": "2026-10-20",
+      "due_date": "2026-11-19",
+      "status": "open",
+      "currency": "USD"
+    },
+    {
+      "id": "INV-2003",
+      "customer_id": "CUS-03",
+      "amount": 12800,
+      "issue_date": "2026-08-15",
+      "due_date": "2026-09-14",
+      "status": "open",
+      "currency": "USD"
+    },
+    {
+      "id": "INV-2004",
+      "customer_id": "CUS-04",
+      "amount": 5600,
+      "issue_date": "2026-08-01",
+      "due_date": "2026-08-31",
+      "status": "disputed",
+      "currency": "USD"
+    },
+    {
+      "id": "INV-2005",
+      "customer_id": "CUS-01",
+      "amount": 3100,
+      "issue_date": "2026-11-10",
+      "due_date": "2026-12-10",
+      "status": "open",
+      "currency": "USD"
+    },
+    {
+      "id": "INV-2006",
+      "customer_id": "CUS-02",
+      "amount": 1900,
+      "issue_date": "2026-09-01",
+      "due_date": "2026-10-01",
+      "status": "open",
+      "currency": "USD"
+    }
+  ],
+  "payments": [
+    {
+      "invoice_id": "INV-2001",
+      "customer_id": "CUS-01",
+      "amount": 1200,
+      "days_late": 12
+    },
+    {
+      "invoice_id": "INV-2002",
+      "customer_id": "CUS-02",
+      "amount": 2650,
+      "days_late": 0
+    },
+    {
+      "invoice_id": "INV-2003",
+      "customer_id": "CUS-03",
+      "amount": 2000,
+      "days_late": 38
+    },
+    {
+      "invoice_id": "INV-2006",
+      "customer_id": "CUS-02",
+      "amount": 1900,
+      "days_late": 5
+    },
+    {
+      "invoice_id": "INV-2001",
+      "customer_id": "CUS-01",
+      "amount": 800,
+      "days_late": 20
+    }
+  ]
+}
